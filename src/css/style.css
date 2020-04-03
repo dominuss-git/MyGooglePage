@@ -145,36 +145,33 @@ body {
 .nav-menu {
   display: flex;
   flex-direction: row;
-  padding: 15px 0px 0px 160px;
+  padding: 0px 0px 0px 160px;
   align-content: center;
 }
 .nav-menu__button {
   align-self: start;
   height: 30px;
   padding-right: 20px;
+  color: rgba(0, 0, 0, 0.49);
   font-size: 14px;
   cursor: pointer;
   outline-width: 0;
 }
-.nav-menu__button:hover {
-  border-bottom: 3px solid #4D8CF5;
-  color: #1A73E8;
+.nav-menu__button__a {
+  fill: #828282;
 }
-.nav-menu__button:hover .map-button__a {
-  fill: #34A853;
+.nav-menu__button__b {
+  fill: #828282;
 }
-.nav-menu__button:hover .map-button__b {
-  fill: #EA4335;
+.nav-menu__button__c {
+  fill: #828282;
 }
-.nav-menu__button:hover .map-button__c {
-  fill: #FBBC04;
-}
-.nav-menu__button:hover .map-button__d {
-  fill: #4285F4;
+.nav-menu__button__d {
+  fill: #828282;
 }
 @media (max-width: 900px) {
   .nav-menu {
-    padding: 0px 0px 0px 100px;
+    padding: 0px 0px 0px 125px;
   }
   .nav-menu__button {
     font-size: 0px;
@@ -182,6 +179,33 @@ body {
     padding-right: 1%;
     padding: 0px 0px 0px;
   }
+}
+@media (max-width: 680px) {
+  .nav-menu {
+    padding: 0px 0px 0px 110px;
+  }
+}
+@media (max-width: 400px) {
+  .nav-menu {
+    padding: 0px 0px 0px 100px;
+  }
+}
+
+.nav-menu__button-all {
+  border-bottom: 3px solid #4D8CF5;
+  color: #1A73E8;
+}
+.nav-menu__button-all .nav-menu__button-all-a {
+  fill: #34A853;
+}
+.nav-menu__button-all .nav-menu__button-all-b {
+  fill: #EA4335;
+}
+.nav-menu__button-all .nav-menu__button-all-c {
+  fill: #FBBC04;
+}
+.nav-menu__button-all .nav-menu__button-all-d {
+  fill: #4285F4;
 }
 
 .map-button {
