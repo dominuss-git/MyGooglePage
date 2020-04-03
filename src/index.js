@@ -14,7 +14,7 @@ $('.account-button__account-avatar').click(function(e) {
 
 $('.nav-menu__button-all').click(function(e) {
 
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', '#EA4335');
@@ -54,7 +54,7 @@ $('.nav-menu__button-all').click(function(e) {
 
 $('.nav-menu__button-picture').click(function(e) {
      
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', 'rgba(0, 0, 0, 0.49)');
@@ -94,7 +94,7 @@ $('.nav-menu__button-picture').click(function(e) {
 
 $('.nav-menu__button-more').click(function(e) {
        
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', 'rgba(0, 0, 0, 0.49)');
@@ -134,7 +134,7 @@ $('.nav-menu__button-more').click(function(e) {
 
 $('.nav-menu__button-video').click(function(e) {
 
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', 'rgba(0, 0, 0, 0.49)');
@@ -172,7 +172,7 @@ $('.nav-menu__button-video').click(function(e) {
 
 $('.nav-menu__button-book').click(function(e) {
 
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', 'rgba(0, 0, 0, 0.49)');
@@ -212,7 +212,7 @@ $('.nav-menu__button-book').click(function(e) {
 
 $('.nav-menu__button-map').click(function(e) {
        
-    $(this).css('border-bottom', '3px solid #4D8CF5');
+    $(this).css('border-bottom', '4px solid #4D8CF5');
     $(this).css('color', '#4D8CF5');
 
     $('.nav-menu__button-all-b').css('fill', 'rgba(0, 0, 0, 0.49)');
