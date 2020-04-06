@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: #8d8f8e;
+    font-family: arial,sans-serif;
 }
 
 html,
@@ -317,6 +317,8 @@ body {
 .text {
     margin-top: 10px;
     margin-left: 160px;
+    color: #8d8f8e;
+    font-size: 13px;
 
     @media(max-width: 900px) {
         font-size: 10px;
@@ -344,20 +346,166 @@ body {
         }
 
     &__right-post {
+        font-size: 13px;
         margin-left: 50px;
         border: 1px solid #8d8f8e;
+        padding: 10px;
+        border-radius: 8px;
+        color: #000000;
+    }
+
+    @media(max-width: 700px) {
+        margin-right: 25px;
+        margin-left: 50px;
+
+        &__right-post {
+            display: none !important;
+        }
     }
 }
 
+.right-post {
+    display: flex;
+    flex-direction: column;
+    &__top-content {
+        border-bottom: 1px solid #8d8f8e;
+    }
+    &__img {
+        background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png");
+        height: 170px;
+        padding-bottom: 1px solid #8d8f8e;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 170px;
+        margin-left: auto;
+    }
+    &__img-text {
+        position: absolute;
+        font-size: 12px;
+        margin-top: -110px;
+        color: #8d8f8e;
+    }
+    &__bold-text {
+        font-size: 15px;
+        color: #000000;
+    }
+    &__text {
+        margin-top: 10px;
+    }
+}
 
+.top-link {
+    font-size: 12px;
+    margin: 15px 0px 7px 0px;
+    cursor: pointer;
+
+    &__triangle {
+        border-color: #70757a transparent;
+        margin: 3px 0 0 4px;
+        position: absolute;
+        border-style: solid;
+        border-width: 5px 4px 0 4px;
+    }
+}
+
+.bottom-link {
+
+}
 
 .result {
-    // margin-left:100% ;
+    color: #000000;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 
-    &__left-post {
+    &__info {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+    }
+
+    &__info-img {
+        align-self: center;
+        width: 10px;
+        height: 10px;
+        fill: #70757a;
+    }
+
+    &__info-text {
+        font-size: 10px;
+        padding: 0px 7px 0px 2px;
+        color: #70757a;
+        text-decoration: none;
+    }
+
+    &__info-text:visited {
+        color: #70757a;
+    }
+    &__ifo-text:hover {
+        text-decoration: underline;
+    }
+
+    @media(max-width: 400px) {
+        &__info-text {
+            font-size: 5px;
+        }
+    }
+}
+
+.left-post {
+    display: flex;
+    flex-direction: row;
+
+    &__text {
+        align-self: start;
+        float: left;
+        color: #000000;
         border: 1px solid #8d8f8e;
+        padding: 10px 0 10px 10px;
+        border-radius: 8px;
+        font-size: 13px;
+    }
+
+    &__img {
+        background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png");
+        height: 170px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 170px;
+        align-self: flex-end;
+        float: right;
+        margin-left: auto;
+        cursor: pointer;
+
+        @media(max-width: 390px) {
+            margin-left: 100%;
+            width: 200px;
+        }
+    }
+
+    &__bold-text {
+        color :#000000;
+    }
+
+    &__img-text {
+        text-align: center;
+        margin-top: 112px;
+        color: #ffffff;
+        background-color: #000000b4;
+        font-size: 13px;
+        @media(max-width: 390px) {
+            margin-top: 135px;
+        }
+    }
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    &__data {
+        color: #8d8f8e;
+        font-size: 12px;
     }
 }
