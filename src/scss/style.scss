@@ -365,7 +365,6 @@ body {
 }
 
 .right-content {
-    max-width: 400px;
     &__link {
         float: right;
         margin-top: 10px;
@@ -378,6 +377,7 @@ body {
 .right-post {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     &__top-content {
         border-bottom: 1px solid #8d8f8e;
     }
