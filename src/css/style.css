@@ -248,6 +248,8 @@ body {
     fill: #8d8f8e;
   }
   .right-button__tools {
+    margin-top: 3px;
+    align-self: flex-start;
     font-size: 6px;
     padding-left: 0px;
     margin-left: 0px;
@@ -335,7 +337,7 @@ body {
   border-radius: 8px;
   color: #000000;
 }
-@media (max-width: 700px) {
+@media (max-width: 930px) {
   .content {
     margin-right: 25px;
     margin-left: 50px;
@@ -349,7 +351,7 @@ body {
   float: right;
   margin-top: 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 930px) {
   .right-content__link {
     display: none;
   }
@@ -422,7 +424,7 @@ body {
   margin-left: auto;
   margin-top: -85px;
 }
-@media (max-width: 700px) {
+@media (max-width: 930px) {
   .other-search {
     display: none;
   }
