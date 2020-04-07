@@ -263,23 +263,6 @@ body {
   }
 }
 
-.nav-menu__button-all {
-  border-bottom: 4px solid #4D8CF5;
-  color: #4D8CF5;
-}
-.nav-menu__button-all .nav-menu__button-all-a {
-  fill: #34A853;
-}
-.nav-menu__button-all .nav-menu__button-all-b {
-  fill: #EA4335;
-}
-.nav-menu__button-all .nav-menu__button-all-c {
-  fill: #FBBC04;
-}
-.nav-menu__button-all .nav-menu__button-all-d {
-  fill: #4D8CF5;
-}
-
 .map-button {
   fill: #0000007d;
   float: left;

@@ -291,27 +291,6 @@ body {
     }
 }
 
-.nav-menu__button-all {
-    .nav-menu__button-all-a {
-        fill: $svg-text-active-green;
-    }
-
-    .nav-menu__button-all-b {
-        fill: $svg-text-active-red;
-    }
-
-    .nav-menu__button-all-c {
-        fill: $svg-text-active-yellow;
-    }
-
-    .nav-menu__button-all-d {
-        fill: $svg-text-active;
-    }
-
-    border-bottom: 4px solid $svg-text-active;
-    color: $svg-text-active;
-}
-
 .map-button {
     fill: #0000007d;
     float: left;
