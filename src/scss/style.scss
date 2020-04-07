@@ -1,3 +1,14 @@
+
+$border-color : #dfe1e5;
+$svg-text-color : #8d8f8e;
+$black-text : #000000;
+$white-element: #ffffff;
+$svg-text-active: #4D8CF5;
+$img-text-background: #000000b4;
+$svg-text-active-yellow: #FBBC04;
+$svg-text-active-red: #EA4335;
+$svg-text-active-green: #34A853;
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,7 +25,7 @@ body {
 
 .header {
     padding-top: 5px;
-    border-bottom: 1px solid #dfe1e5;
+    border-bottom: 1px solid $border-color;
 }
 
 .menu {
@@ -29,13 +40,13 @@ body {
         height: 30px;
         width: 92px;
         cursor: pointer;
-        @media(max-width: 900px) {
+        @media (max-width: 900px) {
             width: 51px;
             height: 16px;
             padding-left: 3px;
         }
 
-        @media(max-width: 460px) {
+        @media (max-width: 460px) {
             width: 0px;
             height: 0px;
             padding-left: 3px;
@@ -49,21 +60,22 @@ body {
     margin-left: 35px;
     align-items: center;
     border-radius: 24px;
-    border: 1px solid #dfe1e5;
+    border: 1px solid $border-color ;
     height: 44px;
     width: 690px;
+
     &__text {
         border: none;
         margin-left: 3%;
         font-size: 17px;
         width: 100%;
         height: 100%;
-        color: #000000;
+        color: $black-text;
         align-self: center;
         outline: none;
     }
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
         margin-left: 5%;
 
         &__text {
@@ -73,7 +85,7 @@ body {
 }
 
 .input:hover {
-    box-shadow: 2px 2px 10px 0px #dfe1e5;
+    box-shadow: 2px 2px 10px 0px $border-color ;
 }
 
 .search-botton {
@@ -81,6 +93,7 @@ body {
     align-items: center;
     float: right;
     margin-left: auto;
+
     &__icon-keyboard {
         width: 20px;
     }
@@ -88,7 +101,7 @@ body {
     &__icon-search {
         height: 24px;
         width: 24px;
-        fill: #4D8CF5;
+        fill: $svg-text-active;
     }
 
     &__icon-voice{
@@ -115,8 +128,7 @@ body {
     padding-right: 20px;
     cursor: pointer;
 
-    @media(max-width: 900px) {
-        // margin-left: 2000px;
+    @media (max-width: 900px) {
         padding-right: 10px;
     }
 }
@@ -130,8 +142,9 @@ body {
     &__account-settings {
         height: 24px;
         width: 24px;
-        fill: #8d8f8e;
-        @media(max-width: 900px) { 
+        fill: $svg-text-color;
+
+        @media (max-width: 900px) { 
             margin-left: 10px;
             height: 20px;
             width: 10px;
@@ -139,7 +152,7 @@ body {
     }
     
     &__account-settings:hover {
-        fill: #4D8CF5;
+        fill: $svg-text-active;
     }
 
     &__account-avatar {
@@ -153,7 +166,7 @@ body {
     }
 
     &__account-avatar:hover {
-        box-shadow: 1px 0px 2px #8d8f8e;
+        box-shadow: 1px 0px 2px $border-color;
         cursor: pointer;
     }
 }
@@ -161,10 +174,9 @@ body {
 .nav-menu {
     display: flex;
     flex-direction: row;
-    // width: 80%;
     padding: 0px 0px 0px 160px;
     align-content: center;
-    color: rgb(130, 130, 130);
+    color: $svg-text-color;
 
     &__button {
         align-self: start;
@@ -175,21 +187,16 @@ body {
         outline-width: 0;
     }
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
         padding: 0px 0px 0px 125px;
 
         &__button {
             font-size: 0px;
             padding-top: 40px;
-            // height: 10px;
             padding-right: 1%;
             padding: 0px 0px 0px;
         }
     }
-
-    // @media(max-width: 680px) {
-    //     padding: 0px 0px 0px 110px;
-    // }
 
     @media(max-width: 400px) {
         padding: 0px 0px 0px 100px;
@@ -213,7 +220,7 @@ body {
     }
 
     &__settings:hover {
-        color: #4D8CF5;
+        color: $svg-text-active;
     }
 
     &__settings-img {
@@ -223,12 +230,12 @@ body {
     }
 
     &__settings-img:hover {
-        fill: #4D8CF5;
+        fill: $svg-text-active;
     }
 
     &__tools {
-        color: rgb(130, 130, 130);
-        background-color: #ffffff;
+        color: $svg-text-color;
+        background-color: $white-element;
         padding-top: 5px;
         margin-top: 1px;
         border: none;
@@ -236,24 +243,26 @@ body {
     }
 
     &__tools:hover {
-        border: 1px solid #dfe1e5;
+        border: 1px solid $border-color ;
         align-self: start;
         outline: none;
     }
 
-    @media(max-width: 1100px) {
+    @media (max-width: 1100px) {
         align-self: start;
         padding-top: 4px;
         margin-left: 1px;
+
         &__settings {
             font-size: 8px;
         }
+
         &__tools {
             font-size: 8px;
         }
     }
 
-    @media(max-width: 440px) {
+    @media (max-width: 440px) {
         &__settings {
             font-size: 0px;
             margin-right: 0px;
@@ -262,8 +271,8 @@ body {
         &__settings-img {
             height: 24px;
             width:  24px;
-            fill: #8d8f8e;
         }
+
         &__tools {
              margin-top: 3px;
             align-self: flex-start;
@@ -273,7 +282,7 @@ body {
         }
     }
 
-    @media(max-width: 365px) {
+    @media (max-width: 365px) {
         &__tools {
             font-size: 0px;
             padding: 0px;
@@ -284,23 +293,23 @@ body {
 
 .nav-menu__button-all {
     .nav-menu__button-all-a {
-        fill: #34A853;
+        fill: $svg-text-active-green;
     }
 
     .nav-menu__button-all-b {
-        fill: #EA4335;
+        fill: $svg-text-active-red;
     }
 
     .nav-menu__button-all-c {
-        fill: #FBBC04;
+        fill: $svg-text-active-yellow;
     }
 
     .nav-menu__button-all-d {
-        fill: #4285F4;
+        fill: $svg-text-active;
     }
 
-    border-bottom: 4px solid #4D8CF5;
-    color: #1A73E8;
+    border-bottom: 4px solid $svg-text-active;
+    color: $svg-text-active;
 }
 
 .map-button {
@@ -309,7 +318,7 @@ body {
     padding-right: 5px;
     height: 17px;
 
-    @media(max-width: 390px) {
+    @media (max-width: 390px) {
         height: 30%;
         height: 15px;
     }
@@ -320,15 +329,15 @@ body {
 .text {
     margin-top: 10px;
     margin-left: 160px;
-    color: #8d8f8e;
+    color: $svg-text-color;
     font-size: 13px;
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
         font-size: 10px;
         margin-left: 125px;
     }
 
-    @media(max-width: 460px) {
+    @media (max-width: 460px) {
         margin-left: 50px
     }
 }
@@ -337,33 +346,30 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-        margin-left: 160px;
-        margin-right: 160px;
-        height: 100%;
-        @media(max-width: 900px) {
-            margin-left: 125px;
-        }
+    margin-left: 160px;
+    margin-right: 160px;
+    height: 100%;
 
-        @media(max-width: 460px) {
-            margin-left: 50px
-        }
+    @media (max-width: 900px) {
+        margin-left: 125px;
+    }
+
+    @media (max-width: 460px) {
+        margin-left: 50px
+    }
 
     &__right-post {
         font-size: 13px;
         margin-left: 50px;
-        border: 1px solid #8d8f8e;
+        border: 1px solid $border-color;
         padding: 10px;
         border-radius: 8px;
         color: #000000;
     }
 
-    @media(max-width: 930px) {
+    @media (max-width: 930px) {
         margin-right: 25px;
         margin-left: 50px;
-
-        &__right-post {
-            display: none !important;
-        }
     }
 }
 
@@ -371,7 +377,7 @@ body {
     &__link {
         float: right;
         margin-top: 10px;
-        @media(max-width: 930px) {
+        @media (max-width: 930px) {
             display: none;
         }
     }
@@ -381,13 +387,15 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 400px;
+
     &__top-content {
-        border-bottom: 1px solid #8d8f8e;
+        border-bottom: 1px solid $border-color;
     }
+
     &__img {
         background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png");
         height: 170px;
-        padding-bottom: 1px solid #8d8f8e;
+        padding-bottom: 1px solid $border-color;
         background-size: 100% auto;
         background-repeat: no-repeat;
         width: 170px;
@@ -397,17 +405,17 @@ body {
         position: absolute;
         font-size: 12px;
         margin-top: -110px;
-        color: #8d8f8e;
+        color: $svg-text-color;
     }
     &__bold-text {
         font-size: 15px;
-        color: #000000;
+        color: $black-text;
     }
     &__text {
         margin-top: 10px;
     }
     &__link {
-        color: #000000;
+        color: $black-text;
         text-decoration: none;
         font-size: 18px;
         padding-top: 15px;
@@ -416,6 +424,12 @@ body {
     &__link:hover {
         text-decoration: underline;
     }
+
+    @media (max-width: 930px) {
+        margin-right: 25px;
+        margin-left: 50px;
+        display: none;
+    }
 }
 
 .other-search {
@@ -423,9 +437,10 @@ body {
     flex-direction: column;
     margin-left: 55px;
     margin-top: 30px;
-    border: 1px solid #8d8f8e;
+    border: 1px solid $border-color;
     padding: 10px 0 10px 10px;
     border-radius: 8px;
+
     &__top-text {
         margin-bottom: 10px;
         font-size: 18px;
@@ -446,7 +461,7 @@ body {
         margin-left: auto;
         margin-top: -85px;
     }
-    @media(max-width: 930px) {
+    @media (max-width: 930px) {
         display: none;
     }
 }
@@ -455,6 +470,7 @@ body {
     display: flex;
     flex-direction: row;
     cursor: pointer;
+
     &__img {
         display: flex;
         flex-direction: column;
@@ -469,7 +485,7 @@ body {
     cursor: pointer;
 
     &__triangle {
-        border-color: #70757a transparent;
+        border-color: $svg-text-color transparent;
         margin: 3px 0 0 4px;
         position: absolute;
         border-style: solid;
@@ -488,12 +504,14 @@ body {
 
 .link {
     text-decoration: none;
+
     &__top {
         margin-top: -30px;
         padding-bottom: 14px;
         margin-left: 10px;
         text-decoration: none;
     }
+
     &__top:hover {
         text-decoration: underline;
     }
@@ -502,6 +520,7 @@ body {
         margin-top: 10px;
         text-decoration: none;
     }
+
     &__bottom:hover {
         text-decoration: underline;
     }
@@ -512,7 +531,7 @@ body {
 }
 
 .result {
-    color: #000000;
+    color: $black-text;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -527,21 +546,21 @@ body {
         align-self: center;
         width: 10px;
         height: 10px;
-        fill: #70757a;
+        fill: $svg-text-color;
     }
 
     &__info-text {
         font-size: 11px;
         padding: 0px 7px 0px 2px;
-        color: #70757a;
+        color: $svg-text-color;
         text-decoration: none;
     }
 
     &__info-text:visited {
-        color: #70757a;
+        color: $svg-text-color;
     }
 
-    &__ifo-text:hover {
+    &__info-text:hover {
         text-decoration: underline;
     }
 
@@ -572,8 +591,8 @@ body {
     &__text {
         align-self: start;
         float: left;
-        color: #000000;
-        border: 1px solid #8d8f8e;
+        color: $black-text;
+        border: 1px solid $border-color ;
         padding: 10px 0 10px 10px;
         border-radius: 8px;
         font-size: 13px;
@@ -590,22 +609,23 @@ body {
         margin-left: auto;
         cursor: pointer;
 
-        @media(max-width: 390px) {
+        @media (max-width: 390px) {
             margin-left: 100%;
             width: 200px;
         }
     }
 
     &__bold-text {
-        color :#000000;
+        color: $black-text;
     }
 
     &__img-text {
         text-align: center;
         margin-top: 112px;
-        color: #ffffff;
-        background-color: #000000b4;
+        color: $white-element;
+        background-color: $img-text-background;
         font-size: 13px;
+
         @media(max-width: 390px) {
             margin-top: 135px;
         }
@@ -618,7 +638,7 @@ body {
     padding-top: 10px;
 
     &__data {
-        color: #8d8f8e;
+        color: $svg-text-color;
         font-size: 12px;
     }
 }

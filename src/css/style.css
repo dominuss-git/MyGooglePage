@@ -149,7 +149,7 @@ body {
   }
 }
 .account-button__account-avatar:hover {
-  box-shadow: 1px 0px 2px #8d8f8e;
+  box-shadow: 1px 0px 2px #dfe1e5;
   cursor: pointer;
 }
 
@@ -158,7 +158,7 @@ body {
   flex-direction: row;
   padding: 0px 0px 0px 160px;
   align-content: center;
-  color: #828282;
+  color: #8d8f8e;
 }
 .nav-menu__button {
   align-self: start;
@@ -213,7 +213,7 @@ body {
   fill: #4D8CF5;
 }
 .right-button__tools {
-  color: #828282;
+  color: #8d8f8e;
   background-color: #ffffff;
   padding-top: 5px;
   margin-top: 1px;
@@ -246,7 +246,6 @@ body {
   .right-button__settings-img {
     height: 24px;
     width: 24px;
-    fill: #8d8f8e;
   }
   .right-button__tools {
     margin-top: 3px;
@@ -266,7 +265,7 @@ body {
 
 .nav-menu__button-all {
   border-bottom: 4px solid #4D8CF5;
-  color: #1A73E8;
+  color: #4D8CF5;
 }
 .nav-menu__button-all .nav-menu__button-all-a {
   fill: #34A853;
@@ -278,7 +277,7 @@ body {
   fill: #FBBC04;
 }
 .nav-menu__button-all .nav-menu__button-all-d {
-  fill: #4285F4;
+  fill: #4D8CF5;
 }
 
 .map-button {
@@ -333,7 +332,7 @@ body {
 .content__right-post {
   font-size: 13px;
   margin-left: 50px;
-  border: 1px solid #8d8f8e;
+  border: 1px solid #dfe1e5;
   padding: 10px;
   border-radius: 8px;
   color: #000000;
@@ -342,9 +341,6 @@ body {
   .content {
     margin-right: 25px;
     margin-left: 50px;
-  }
-  .content__right-post {
-    display: none !important;
   }
 }
 
@@ -364,12 +360,12 @@ body {
   max-width: 400px;
 }
 .right-post__top-content {
-  border-bottom: 1px solid #8d8f8e;
+  border-bottom: 1px solid #dfe1e5;
 }
 .right-post__img {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png");
   height: 170px;
-  padding-bottom: 1px solid #8d8f8e;
+  padding-bottom: 1px solid #dfe1e5;
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 170px;
@@ -397,13 +393,20 @@ body {
 .right-post__link:hover {
   text-decoration: underline;
 }
+@media (max-width: 930px) {
+  .right-post {
+    margin-right: 25px;
+    margin-left: 50px;
+    display: none;
+  }
+}
 
 .other-search {
   display: flex;
   flex-direction: column;
   margin-left: 55px;
   margin-top: 30px;
-  border: 1px solid #8d8f8e;
+  border: 1px solid #dfe1e5;
   padding: 10px 0 10px 10px;
   border-radius: 8px;
 }
@@ -449,7 +452,7 @@ body {
   cursor: pointer;
 }
 .top-link__triangle {
-  border-color: #70757a transparent;
+  border-color: #8d8f8e transparent;
   margin: 3px 0 0 4px;
   position: absolute;
   border-style: solid;
@@ -504,18 +507,18 @@ body {
   align-self: center;
   width: 10px;
   height: 10px;
-  fill: #70757a;
+  fill: #8d8f8e;
 }
 .result__info-text {
   font-size: 11px;
   padding: 0px 7px 0px 2px;
-  color: #70757a;
+  color: #8d8f8e;
   text-decoration: none;
 }
 .result__info-text:visited {
-  color: #70757a;
+  color: #8d8f8e;
 }
-.result__ifo-text:hover {
+.result__info-text:hover {
   text-decoration: underline;
 }
 .result__search-value {
@@ -542,7 +545,7 @@ body {
   align-self: start;
   float: left;
   color: #000000;
-  border: 1px solid #8d8f8e;
+  border: 1px solid #dfe1e5;
   padding: 10px 0 10px 10px;
   border-radius: 8px;
   font-size: 13px;
